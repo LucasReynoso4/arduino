@@ -82,5 +82,20 @@ Descripcion:
 La segunda parte del proyecto se encarga de lo mismo que la primera pero ademas contiene un motor y un sensor de temperatura que al llegar a determinada temperatura el motor se prende
 
 # FUNCIONES PRINCIPAL
+Si el senor determina una temperatura asignada activa el motor
+
+  float lectura;
+  float temperatura;
+  lectura = analogRead(SENSOR);
+  temperatura = map(lectura, 20, 358, -5, 125);
+  Serial.println("Temperatura: " + String(temperatura) + "°C");
+  printCount(contador);
+  
+  if(temperatura> umbralTemperatura){
+     digitalWrite(2, HIGH);
+  }else{
+  	
+    digitalWrite(2, LOW);	
+  }
 
 
