@@ -11,4 +11,7 @@ La primera parte del proyecto se encarga de contar hasta 99 o de 99 hasta 0 en l
 PARTE DOS DEL PROYECTO
 ![Captura de pantalla (488)](https://github.com/LucasReynoso4/arduino/assets/111331322/bc4292d1-29c9-4f50-a5b1-0ecb373ca3b3)
 
+Descripcion:
+La segunda parte del proyecto se encarga de lo mismo que la primera pero ademas contiene un motor y un sensor de temperatura
+
 
