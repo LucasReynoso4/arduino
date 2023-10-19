@@ -85,19 +85,19 @@ La segunda parte del proyecto se encarga de lo mismo que la primera pero ademas 
 Si el senor determina una temperatura asignada activa el motor
 
 
-const float umbralTemperatura = 30.0;
-  float lectura;
-  float temperatura;
-  lectura = analogRead(SENSOR);
-  temperatura = map(lectura, 20, 358, -5, 125);
-  Serial.println("Temperatura: " + String(temperatura) + "°C");
-  printCount(contador);
-  
-  if(temperatura> umbralTemperatura){
-     digitalWrite(2, HIGH);
-  }else{
-  	
-    digitalWrite(2, LOW);	
-  }
+    const float umbralTemperatura = 30.0;
+      float lectura;
+      float temperatura;
+      lectura = analogRead(SENSOR);
+      temperatura = map(lectura, 20, 358, -5, 125);
+      Serial.println("Temperatura: " + String(temperatura) + "°C");
+      printCount(contador);
+      
+      if(temperatura> umbralTemperatura){
+         digitalWrite(2, HIGH);
+      }else{
+      	
+        digitalWrite(2, LOW);	
+      }
 
 
