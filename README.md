@@ -9,9 +9,10 @@ Descripcion:
 La primera parte del proyecto se encarga de contar hasta 99 o de 99 hasta 0 en los visualizadores
 
 PARTE DOS DEL PROYECTO
-![Captura de pantalla (488)](https://github.com/LucasReynoso4/arduino/assets/111331322/bc4292d1-29c9-4f50-a5b1-0ecb373ca3b3)
+![Captura de pantalla (489) - copia](https://github.com/LucasReynoso4/arduino/assets/111331322/5be7555d-47fe-455c-92e8-bc6eb61cae37)
+
 
 Descripcion:
-La segunda parte del proyecto se encarga de lo mismo que la primera pero ademas contiene un motor y un sensor de temperatura
+La segunda parte del proyecto se encarga de lo mismo que la primera pero ademas contiene un motor y un sensor de temperatura que al llegar a determinada temperatura el motor se prende
 
 
