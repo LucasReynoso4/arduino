@@ -84,6 +84,8 @@ La segunda parte del proyecto se encarga de lo mismo que la primera pero ademas 
 # FUNCIONES PRINCIPAL
 Si el senor determina una temperatura asignada activa el motor
 
+
+const float umbralTemperatura = 30.0;
   float lectura;
   float temperatura;
   lectura = analogRead(SENSOR);
