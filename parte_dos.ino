@@ -13,6 +13,7 @@
 #define APAGADOS 0
 #define TIMEDISPLAYON 10
 #define SENSOR A0
+#define MOTOR 2
 
 
 int contador = 0;
@@ -23,7 +24,7 @@ int bajaPrevia = 1;
 int reset = 1;
 int resetPrevia = 1;
 
-
+const float umbralTemperatura = 30.0;
 
 
 
@@ -39,6 +40,7 @@ void setup()
   pinMode(7 , OUTPUT);
   pinMode(UNIDAD , OUTPUT);
   pinMode(DECENA , OUTPUT);
+  pinMode(2, OUTPUT);
   
   pinMode(3, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
@@ -84,7 +86,12 @@ void loop()
   Serial.println("Temperatura: " + String(temperatura) + "°C");
   printCount(contador);
   
-  
+  if(temperatura> umbralTemperatura){
+     digitalWrite(2, HIGH);
+  }else{
+  	
+    digitalWrite(2, LOW);	
+  }
 }
 
 
